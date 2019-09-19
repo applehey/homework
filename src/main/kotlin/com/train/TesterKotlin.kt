@@ -17,7 +17,5 @@ class Ticket(var count : Int, var discount : Int) {
         System.out.println("Total tickets: " + (count+discount) +
                 " Round-trip: $discount Total: ${getAverage()}" )
     }
-    fun getAverage() : Int{
-        return ((count * 1000) + ((discount * 2000 * 0.9).toInt()))
-    }
+    fun getAverage() = ((count * 1000) + ((discount * 2000 * 0.9).toInt()))
 }
